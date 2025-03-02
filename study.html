@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="UFT-8">
+<meta name= "viewport" content="width=device-width,initial-scale=1.0">
+<title>Study and Focus</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+
+.body {
+    font-family: Serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.h1 {
+    font-size:400%
+    text-align:center;
+}
+
+.top-left-icons{
+  position:center;
+  top:10px;
+  left:10px;
+}
+
+.icon{
+  width:30px;
+  margin-right:10px;
+}
+
+.sidebar {
+  position:absolute;
+  top:5px;
+  right:10px;
+  background-color:white;
+  border:2px solid #556b2f;
+  border-radius:5px;
+  font-size:20px;
+}
+.sidebar-ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  list-style-type:circle;
+}
+.sidebar-li{
+  padding:5px 10px;
+  border-bottom:none;
+}
+.sidebar-li:last-child {
+  border-bottom:none;
+}
+.sidebarbutton {
+border:none;
+border-radius:5px;
+width:100%;
+font-size:13px;
+cursor:pointer;s
+}
+
+
+.container{
+font-family:Sans-serif, Serif;
+padding:20px;
+float:left;
+width:500px;
+margin-left:200px;
+margin-top:100px;
+margin-right:100px;
+}
+.button-container{
+ position: absolute;
+margin-bottom: 20px;
+display: flex;
+}
+.img{
+width:100px;
+height:100px;
+}
+
+.main {
+    background-color: #fff;
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}
+.container2{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    height:500px;
+}
+
+.timer-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    margin-top:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color:#556b2f;
+    border: 8px solid #556b2f;
+}
+
+.control-buttons {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.control-buttons button {
+    background-color:556b2f;
+    color: #898989;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-buttons button:hover {
+    background-color: #556b2f;
+    transition: background-color 0.3s;
+}
+
+</style>
+</head>
+
+<body>
+<div class="top left-icons">
+  <nav>
+<button onclick="location.href='homepage.html'"><img src="logo.png" alt="home" width="100"></button>
+</nav>
+<button><img src="translate-icon-md.png" alt="Language" class="icon"></button>
+<button><img src="images.png" alt="Darkmode" class="icon"></button>
+</div>
+ 
+<h1>Study and Focus <img src="chapter.png" alt="book" width="100"></h1>
+
+<div class="sidebar">
+<div class="sidebar-button">
+<ul>
+<li><button onclick="location.href='homework.html'">Homework & Deadlines</button></li>
+<li><button onclick="location.href='tasks.html'">Tasks & To-do lists</button></li>
+<li><button><u>Study and Focus</u></button></li>
+</ul>
+</div>
+</div>
+
+<div class="container">
+<h2>Title</h2>
+<p>Click on this text and the title to edit your study document according to your preference.<button>Click this button </button> to add a blank document and click the buttons below to import files and go into focus mode. Stay organised!</p>
+</div>
+
+<div class="button container">
+  
+<button class="Custom buttons"><u>Focus mode</u></button>
+<button class="Custom buttons"><u>Import files</u></button>
+</div>
+
+    <script src=
+'https://kit.fontawesome.com/a076d05399.js'
+            crossorigin='anonymous'>
+      </script>
+      
+    <div class="main">
+      <h3 style="color:dark-olive-green">
+          Pomodoro timer
+      </h3>
+      <div class="container2">
+    
+        <div class="timer-circle"
+             id="timer">15:00
+          </div>
+        <div class="control-buttons">
+            <button onclick="togglePauseResume()">
+                  Pause
+              </button>
+            <button onclick="restartTimer()">
+                  Restart
+              </button>
+            <button onclick="chooseTime()">
+                  Choose Time
+              </button>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

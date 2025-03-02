@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+<title>Your recent task progress</title>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Recent Task Progress</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<style>
+.body {
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+    text-align:center;
+    margin: 0;
+    padding: 20px;
+ }
+.h1 {
+  text-align:center;
+}
+.top-left-icons {
+    position: center;
+    top: 10px;
+    left: 10px;
+}
+.icon {
+    width: 30px;
+    margin-right: 10px;
+}
+.sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #556b2f;
+    border-radius: 5px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style-type:circle;
+}
+.sidebar li {
+    padding: 5px 10px;
+}
+.sidebar li:last-child {
+    border-bottom: none;
+}
+.sidebar button {
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 13px;
+            cursor: pointer;s
+ }
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+}
+.card {
+    background-color: #ddd;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.progress-bar {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    height: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background-color:grey;
+}
+.progress-text {
+    font-size: 12px;
+    color: #333;
+}
+.no-exams {
+    font-size: 18px;
+    font-weight: bold;
+}
+.alert {
+    color: red;
+    font-size: 18px;
+}
+</style>
+<body>
+<!-- Language & Theme Icons -->
+    <div class="top-left-icons">
+        <button><img src="translate-icon-md.png" alt="Language" class="icon"></button>
+        <button><img src="images.png" alt="Theme" class="icon"></button>
+    </div>
+
+    <!-- Title -->
+    <h1>Your recent task progress</h1>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <ul>
+          <nav>
+      <li><button onclick="location.href='homework.html'">Homework & Deadlines</button></li>
+      <li><button onlick="location.href='study.html'">Study & Focus</button></li>
+     <li><button onlick="location.href='tasks.html'">Tasks & To-do lists</button></li>
+            </nav>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        
+          <!-- Homework Progress -->
+        <div class="card">
+            <h2>Recent homework progress (per subject)</h2>
+            <p>Biology</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 95%;"></div>
+            </div>
+            <p class="progress-text">95% done</p>
+
+            <p>Math</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 45%;"></div>
+            </div>
+            <p class="progress-text">45% done</p>
+        </div>
+
+        <!-- Upcoming Exams -->
+        <div class="card">
+            <h2>Upcoming exams</h2>
+            <p class="no-exams">NO UPCOMING EXAMS</p>
+        </div>
+
+        <!-- Upcoming Deadlines -->
+        <div class="card">
+            <h2>Upcoming deadlines</h2>
+            <p>Music E-portfolio submissions - 2 days <span class="alert">❗</span></p>
+            <p>Physics assesprep - 1 day <span class="alert">❗</span></p>
+        </div>
+
+    </div>
+</body>
+</html>
